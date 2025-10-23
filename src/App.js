@@ -1,4 +1,5 @@
 import { handleCarCreation } from './controller/carController.js';
+import { handleMoveController } from './controller/moveController.js';
 import { getCarNamesInput, getRoundInput } from './view/console.js';
 
 class App {
@@ -7,7 +8,7 @@ class App {
     const roundInput = await getRoundInput();
 
     const cars = handleCarCreation(carNamesInput);
-    console.log(cars);
+    const movedCars = handleMoveController(cars);
   }
 }
 
