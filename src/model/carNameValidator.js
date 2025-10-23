@@ -9,3 +9,17 @@ export function validateCarNameLength(names) {
     }
   });
 }
+
+export function validateCarNameDuplicate(names) {
+  const uniqueNames = {};
+
+  for (const name of names) {
+    const trimmed = name.trim();
+
+    if (uniqueNames[trimmed]) {
+      throw new Error('[ERROR] 자동차 이름은 중복될 수 없습니다.');
+    }
+
+    uniqueNames[trimmed] = true;
+  }
+}
