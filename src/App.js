@@ -8,7 +8,7 @@ class App {
     const roundInput = await getRoundInput();
 
     const cars = handleCarCreation(carNamesInput);
-    const movedCars = handleMoveController(cars);
+    const movedCars = handleMoveController(cars, roundInput);
   }
 }
 
