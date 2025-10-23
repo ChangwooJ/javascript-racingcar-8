@@ -5,7 +5,7 @@ export function parseCarNames(carNamesInput) {
 export function createCars(names) {
   const cars = names.map((name) => ({
     name: name,
-    position: 0,
+    position: '',
   }));
 
   return cars;
