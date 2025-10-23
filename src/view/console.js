@@ -14,10 +14,16 @@ export function printCarPosition(car) {
   Console.print(`${car.name} : ${car.position}`);
 }
 
-export function printMessage(message) {{
-  Console.print(`${message}`);
-}}
+export function printMessage(message) {
+  {
+    Console.print(`${message}`);
+  }
+}
 
 export function printLineBreak() {
   Console.print('\n');
+}
+
+export function printWinner(winnerNames) {
+  Console.print(`최종 우승자 : ${winnerNames.join(', ')}`);
 }
